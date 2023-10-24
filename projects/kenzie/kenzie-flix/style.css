@@ -33,11 +33,13 @@ header {
     
 }
 
-.card-profile:hover {
-    border: 2px solid #fff;
+.card-profile img:hover {
+    border: 1px solid #fff;
     border-radius: 2px;
-    color: #fff;
     padding: 4px;
+}
+.card-profile:hover {
+    color: #fff;
 }
 .profile-names img {
     width: 100%;
