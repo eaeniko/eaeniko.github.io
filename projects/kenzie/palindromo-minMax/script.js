@@ -1,30 +1,30 @@
 function isPalindrome(str){
-    let frase = str.toLowerCase().replaceAll(' ', '');
-    let fraseInvertida = '';
+    let strLowerCase = str.toLowerCase().replaceAll(' ', '');
+    let invertedStr = '';
 
-    for (let i = frase.length -1; i >= 0; i--) {
-        fraseInvertida += frase[i];
+    for (let i = strLowerCase.length -1; i >= 0; i--) {
+        invertedStr += strLowerCase[i];
     }
-    if (frase === fraseInvertida) {
+    if (strLowerCase === invertedStr) {
         return true;
     }
     return false;
 }
 function arrayMaxMin(arr){
-    let valorMin = arr[0];
-    let valorMax = arr[0];
+    let minValue = arr[0];
+    let maxValue = arr[0];
     const newArray = [];
 
     for (let i = 1; i < arr.length; i++) {
-        if(arr[i] >= valorMax) {
-            valorMax = arr[i];
+        if(arr[i] > maxValue) {
+            maxValue = arr[i];
         }
-        if (arr[i] <= valorMin) {
-            valorMin = arr[i];
+        if (arr[i] < minValue) {
+            minValue = arr[i];
         }
         
     }
-    newArray.push(valorMin);
-    newArray.push(valorMax);
+    newArray.push(minValue);
+    newArray.push(maxValue);
     return newArray;
 }
